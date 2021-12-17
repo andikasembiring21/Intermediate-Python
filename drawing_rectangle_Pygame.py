@@ -1,0 +1,11 @@
+import pygame
+background_color=(212,250,205)
+(width,height)=(300,200)
+color=(234,0,0)
+screen=pygame.display.set_mode((width,height))
+pygame.display.set_caption('Drawing')
+screen.fill(background_color)
+pygame.draw.rect(screen,color,(100,50,60,30),14) #pygame.draw.rect(screen, color, (x,y,width,height), thickness)
+pygame.draw.rect(screen,color,(200,50,60,30),14)
+pygame.draw.rect(screen,color,(120,130,60,30),14)
+pygame.display.update()
